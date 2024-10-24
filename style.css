@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  padding: 5px 50px;
+  gap: 20px;
+}
+.leaderboard-container {
+  background-color: #435585;
+  border-radius: 10px;
+  padding: 10px 25px;
+}
+.leaderboard-content {
+  display: grid;
+  padding: 10px;
+  color: white;
+}
+.leaderboard-content h1 {
+  margin-bottom: 15px;
+}
+.leaderboard-content p {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.leaderboard-content .button-content {
+  margin-top: 30px;
+  display: grid;
+}
+.leaderboard-content button {
+  margin-top: 10px;
+  font-size: 16px;
+  margin-left: 0;
+  width: 130px;
+  padding: 7px 0px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  transition: all 0s ease;
+  border-radius: 5px;
+}
+.leaderboard-content button:active {
+  background-color: white;
+  color: black;
+}
+.game-container {
+  background-color: #435585;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  width: 70%;
+}
+.game-container h1 {
+  margin-bottom: 30px;
+  color: white;
+}
+.game-content {
+  margin-top: 20px;
+  display: grid;
+  gap: 7px;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+}
+.box-tictac {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+}
+.box-tictac:hover {
+  background-color: #d2e0fb;
+}
+
+@media (max-width: 680px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 12px;
+  }
+  .leaderboard-container {
+    width: 100%;
+  }
+  .game-container {
+    width: 100%;
+  }
+  .leaderboard-container .button-content {
+    display: flex;
+  }
+  .leaderboard-content button {
+    margin-left: 10px;
+  }
+}

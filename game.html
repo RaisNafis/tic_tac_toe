@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="leaderboard-container">
+        <div class="leaderboard-content">
+          <h1>Leaderboard</h1>
+          <p>Player 1 (X): <span id="player1-score">0</span></p>
+          <p>Player 2 (O): <span id="player2-score">0</span></p>
+          <div class="button-content">
+            <button id="reset-game">Reset Game</button>
+            <a href="index.html"><button>Back to lobby</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="game-container">
+        <h1 id="current-player">Current player X</h1>
+        <div class="game-content">
+          <div class="box-tictac box-1"></div>
+          <div class="box-tictac box-2"></div>
+          <div class="box-tictac box-3"></div>
+          <div class="box-tictac box-4"></div>
+          <div class="box-tictac box-5"></div>
+          <div class="box-tictac box-6"></div>
+          <div class="box-tictac box-7"></div>
+          <div class="box-tictac box-8"></div>
+          <div class="box-tictac box-9"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>
